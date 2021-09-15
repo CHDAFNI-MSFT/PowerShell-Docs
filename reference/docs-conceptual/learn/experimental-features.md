@@ -1,5 +1,5 @@
 ---
-ms.date: 09/02/2021
+ms.date: 08/04/2021
 title: Using Experimental Features in PowerShell
 description: Lists the currently available experimental features and how to use them.
 ---
@@ -96,7 +96,7 @@ enables coloring of specific file types.
   The **Extension** member pre-includes extensions for archive and PowerShell files.
 
 For more information, see
-[about_Automatic_Variables](/powershell/module/Microsoft.PowerShell.Core/About/about_Automatic_Variables).
+[about_Automatic_Variables](/powershell/module/Microsoft.PowerShell.Core/About/about_Automatic_Variables)
 
 > [!NOTE]
 > You must have the **PSAnsiRendering** experimental feature enabled to use this feature.
@@ -206,7 +206,7 @@ Exposes an API to allow assembly loading from native code.
 When this experimental feature is enabled PowerShell uses the `ArgumentList` property of the
 `StartProcessInfo` object rather than our current mechanism of reconstructing a string when invoking
 a native executable.
-
+z
 > [!CAUTION]
 > The new behavior is a **breaking change** from current behavior. This may break scripts and
 > automation that work around the various issues when invoking native applications. Historically,
@@ -225,9 +225,7 @@ use the `Legacy` style argument passing.
 - `wscript.exe`
 - ending with `.bat`
 - ending with `.cmd`
-- ending with `.js`
 - ending with `.vbs`
-- ending with `.wsf`
 
 If the `$PSNativeArgumentPassing` is set to either `Legacy` or `Standard`, the check for these files
 do not occur. The default behavior is platform specific. On Windows platforms, the default setting
